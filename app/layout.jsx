@@ -1,8 +1,8 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'miniTrekkers — Kids Trekking Community, Coimbatore & Chennai',
-  description: 'Where little legs climb big mountains. miniTrekkers organises safe, fun treks for kids across Coimbatore and Chennai.',
+  title: 'MiniTrekkers, Kids Trekking Community, Coimbatore',
+  description: 'Where little legs climb big mountains. MiniTrekkers organises safe, fun treks for kids across Coimbatore.',
 }
 
 export default function RootLayout({ children }) {

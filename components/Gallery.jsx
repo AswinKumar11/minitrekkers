@@ -1,9 +1,11 @@
+import Image from 'next/image'
+
 const photos = [
-  { src: '/gallery-1.jpg', label: 'Summit day',          tall: true  },
-  { src: '/gallery-2.jpg', label: 'Forest trail',         tall: false },
-  { src: '/gallery-3.jpg', label: 'Campfire night',       tall: false },
-  { src: '/gallery-4.jpg', label: 'Waterfall discovery',  tall: false },
-  { src: '/gallery-5.jpg', label: 'Sunrise at the top',   tall: false },
+  { src: '/gallery-1.jpg', label: 'Summit day',          tall: true,  real: true },
+  { src: '/gallery-2.jpg', label: 'Forest trail',         tall: false, real: true },
+  { src: '/gallery-3.jpg', label: 'The whole crew',       tall: false, real: true },
+  { src: '/gallery-4.jpg', label: 'Waterfall discovery',  tall: false, real: true },
+  { src: '/gallery-5.jpg', label: 'Hilltop views',        tall: false, real: true },
 ]
 
 // Placeholder gradient colours until real photos are added
@@ -40,7 +42,9 @@ export default function Gallery() {
             style={p.tall ? { aspectRatio: 'auto' } : {}}
           >
             {/* Replace bg-gradient with next/image once real photos are in /public */}
-            {/* <Image src={p.src} alt={p.label} fill className="object-cover" /> */}
+            {p.real && (
+              <Image src={p.src} alt={p.label} fill className="object-cover" sizes="(max-width: 768px) 50vw, 33vw" />
+            )}
             <div className="absolute inset-0 flex items-end p-3">
               <span className="text-white/80 text-xs font-semibold bg-black/20 px-2 py-1 rounded-full">
                 {p.label}
@@ -52,7 +56,7 @@ export default function Gallery() {
 
       <div className="text-center mt-10">
         <a
-          href="https://www.instagram.com/minitrekkers.in/"
+          href="https://www.instagram.com/MiniTrekkers.in/"
           target="_blank"
           rel="noopener noreferrer"
           className="inline-flex items-center gap-2 bg-green-deep text-white font-semibold px-7 py-3.5 rounded-full hover:opacity-85 transition-opacity"
@@ -62,7 +66,7 @@ export default function Gallery() {
             <circle cx="12" cy="12" r="5"/>
             <circle cx="17.5" cy="6.5" r="1.2" fill="currentColor"/>
           </svg>
-          See more on Instagram @minitrekkers.in
+          See more on Instagram @MiniTrekkers.in
         </a>
       </div>
     </section>

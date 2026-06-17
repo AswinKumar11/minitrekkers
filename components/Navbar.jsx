@@ -18,7 +18,7 @@ export default function Navbar() {
         <a href="#home" className="flex items-center">
           <Image
             src="/logo.svg"
-            alt="miniTrekkers"
+            alt="MiniTrekkers"
             width={180}
             height={50}
             priority

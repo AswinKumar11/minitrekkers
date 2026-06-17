@@ -19,8 +19,8 @@ export default function About() {
             Getting kids out of home and into the wild
           </h2>
           <p className="text-black leading-relaxed mb-4">
-            miniTrekkers is a Coimbatore-based community that organises safe, fun-filled treks
-            for children. We believe nature is the best classroom — every trail teaches something
+            MiniTrekkers is a Coimbatore-based community that organises safe, fun-filled treks
+            for children. We believe nature is the best classroom, every trail teaches something
             a screen never can.
           </p>
           <p className="text-black leading-relaxed">
@@ -44,7 +44,7 @@ export default function About() {
           <div className="rounded-2xl overflow-hidden aspect-[4/5] relative">
             <Image
               src="/trek-kids.jpg"
-              alt="miniTrekkers kids on trail"
+              alt="MiniTrekkers kids on trail"
               fill
               className="object-cover object-center"
               sizes="(max-width: 768px) 100vw, 50vw"

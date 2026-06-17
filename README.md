@@ -1,4 +1,4 @@
-# miniTrekkers Website
+# MiniTrekkers Website
 
 Built with **Next.js 14 + Tailwind CSS**.
 
@@ -42,7 +42,7 @@ const photos = [
 
 ## Project Structure
 ```
-minitrekkers/
+MiniTrekkers/
 ├── app/
 │   ├── layout.jsx      # Root layout, fonts, metadata
 │   ├── page.jsx        # Main page (assembles all sections)
@@ -56,7 +56,7 @@ minitrekkers/
 │   ├── Contact.jsx     # Form → Formspree email + WhatsApp
 │   └── Footer.jsx      # Footer with logo and links
 ├── public/
-│   ├── logo.svg        # miniTrekkers logo
+│   ├── logo.svg        # MiniTrekkers logo
 │   ├── trek-kids.jpg   # About section photo
 │   └── gallery-*.jpg   # Gallery photos (replace with real ones)
 └── tailwind.config.js  # Brand colours and fonts

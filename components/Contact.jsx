@@ -42,7 +42,7 @@ export default function Contact() {
 
     // 2️⃣ Open WhatsApp with pre-filled message
     const lines = [
-      "Hi miniTrekkers!",
+      "Hi MiniTrekkers!",
       "",
       `*Parent:* ${form.name}`,
       `*Phone:* ${form.phone}`,
@@ -79,7 +79,12 @@ export default function Contact() {
 
           <div className="space-y-5">
             {/* Location */}
-            <div className="flex items-start gap-4">
+            <a
+              href="https://www.google.com/maps/place/11%C2%B004'28.9%22N+77%C2%B000'05.2%22E/@11.0746954,76.9988639,17z/data=!3m1!4b1!4m4!3m3!8m2!3d11.0746954!4d77.0014388!18m1!1e1"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-4 group"
+            >
               <div className="w-11 h-11 rounded-full bg-green-light flex items-center justify-center shrink-0 text-lg">
                 &#x1F4CD;
               </div>
@@ -87,11 +92,11 @@ export default function Contact() {
                 <div className="font-semibold text-sm text-black">
                   Location
                 </div>
-                <div className="text-sm text-black">
-                  Coimbatore &amp; Chennai, Tamil Nadu
+                <div className="text-sm text-black group-hover:underline">
+                  Coimbatore, Tamil Nadu
                 </div>
               </div>
-            </div>
+            </a>
 
             {/* Phone */}
             <div className="flex items-start gap-4">
@@ -114,7 +119,7 @@ export default function Contact() {
             {/* Instagram */}
             <div className="flex items-start gap-4">
               <a
-                href="https://www.instagram.com/minitrekkers.in/"
+                href="https://www.instagram.com/MiniTrekkers.in/"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="w-11 h-11 rounded-full bg-green-light flex items-center justify-center hover:bg-ochre-light transition-colors"
@@ -140,12 +145,12 @@ export default function Contact() {
                   Instagram
                 </div>
                 <a
-                  href="https://www.instagram.com/minitrekkers.in/"
+                  href="https://www.instagram.com/MiniTrekkers.in/"
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-sm text-green-mid hover:underline"
                 >
-                  @minitrekkers.in
+                  @MiniTrekkers.in
                 </a>
               </div>
             </div>

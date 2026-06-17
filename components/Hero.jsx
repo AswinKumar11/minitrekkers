@@ -6,14 +6,14 @@ export default function Hero() {
     >
       <div className="text-center z-10 max-w-2xl">
         <span className="inline-block text-xs font-semibold tracking-widest uppercase text-ochre mb-5">
-          Coimbatore &amp; Chennai Kids Trekking Community
+          Coimbatore Based Kids Trekking Community
         </span>
         <h1 className="font-display text-4xl md:text-6xl font-bold text-white leading-tight mb-5">
           Where little legs climb{' '}
           <em className="text-ochre not-italic">big mountains</em>
         </h1>
         <p className="text-white/70 text-lg max-w-md mx-auto mb-10 leading-relaxed">
-          We take kids off screens and into the wild — exploring forests, hills,
+          We take kids off screens and into the wild, exploring forests, hills
           and trails. Real fun. Real learning. Real memories.
         </p>
         <div className="flex flex-wrap gap-4 justify-center">
