@@ -1,10 +1,22 @@
+import Image from 'next/image'
+
 export default function Hero() {
   return (
     <section
       id="home"
-      className="min-h-screen bg-green-deep flex flex-col items-center justify-center px-[5%] pt-24 pb-16 overflow-hidden"
+      className="relative min-h-screen bg-green-deep flex flex-col items-center justify-center px-[5%] pt-24 pb-16 overflow-hidden"
     >
-      <div className="text-center z-10 max-w-2xl">
+      <Image
+        src="/gallery-3.jpg"
+        alt=""
+        fill
+        priority
+        sizes="100vw"
+        className="object-cover object-center"
+      />
+      <div className="absolute inset-0 bg-gradient-to-b from-green-deep/85 via-green-deep/75 to-green-deep/90" />
+
+      <div className="relative text-center z-10 max-w-2xl">
         <span className="inline-block text-xs font-semibold tracking-widest uppercase text-ochre mb-5">
           Coimbatore Based Kids Trekking Community
         </span>
@@ -34,7 +46,7 @@ export default function Hero() {
 
       {/* Mountain SVG illustration */}
       <svg
-        className="w-full max-w-3xl mt-12"
+        className="relative z-10 w-full max-w-3xl mt-12"
         viewBox="0 0 780 260"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
