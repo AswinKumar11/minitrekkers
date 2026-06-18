@@ -14,17 +14,17 @@ export default function Hero() {
         sizes="100vw"
         className="object-cover object-center"
       />
-      <div className="absolute inset-0 bg-gradient-to-b from-green-deep/85 via-green-deep/75 to-green-deep/90" />
+      <div className="absolute inset-0 bg-gradient-to-b from-green-deep/30 via-green-deep/15 to-green-deep/55" />
 
       <div className="relative text-center z-10 max-w-2xl">
         <span className="inline-block text-xs font-semibold tracking-widest uppercase text-ochre mb-5">
           Coimbatore Based Kids Trekking Community
         </span>
-        <h1 className="font-display text-4xl md:text-6xl font-bold text-white leading-tight mb-5">
+        <h1 className="font-display text-4xl md:text-6xl font-bold text-white leading-tight mb-5 [text-shadow:0_2px_16px_rgba(0,0,0,0.55)]">
           Where little legs climb{' '}
           <em className="text-ochre not-italic">big mountains</em>
         </h1>
-        <p className="text-white/70 text-lg max-w-md mx-auto mb-10 leading-relaxed">
+        <p className="text-white text-lg max-w-md mx-auto mb-10 leading-relaxed [text-shadow:0_1px_3px_rgba(0,0,0,0.95),0_2px_16px_rgba(0,0,0,0.8)]">
           We take kids off screens and into the wild, exploring forests, hills
           and trails. Real fun. Real learning. Real memories.
         </p>
@@ -46,7 +46,7 @@ export default function Hero() {
 
       {/* Mountain SVG illustration */}
       <svg
-        className="relative z-10 w-full max-w-3xl mt-12"
+        className="relative z-10 w-full max-w-3xl mt-24"
         viewBox="0 0 780 260"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
